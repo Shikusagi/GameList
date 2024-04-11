@@ -1,0 +1,23 @@
+{
+  "user": {
+    "username": "Shiku",
+    "profilePicture": "https://i.imgur.com/FfqCvuB.jpeg",
+    "games": [
+      { 
+        "id": 1,
+        "title": "Fortnite",
+        "grade": 4
+      },
+      {
+        "id": 2,
+        "title": "Dofus",
+        "grade": 3
+      },
+      {
+        "id": 3,
+        "title": "Genshin Impact",
+        "grade": 5
+      }
+    ]
+  }
+}

@@ -1,26 +1,35 @@
-<script setup>
-import { ref } from 'vue';
-
-const username = 'Shiku';
-const entries = ref([
-  { id: 1, title: 'Fortnite' },
-  { id: 2, title: 'Dofus' },
-  { id: 3, title: 'Genshin Impact' },
-]);
-
-
-</script>
-
 <template>
   <div>
-    <img src="https://i.imgur.com/FfqCvuB.jpeg" alt="Profile Picture" />
-    <span>{{ username }}</span>
+    <img :src="user.profilePicture" alt="Profile Picture" />
+    <span>{{ user.username }}</span>
     <ul>
-      <li v-for="entry in entries" :key="entry.id">{{ entry.title }}</li>
+      <li v-for="game in user.games" :key="game.id">
+        {{ game.title }} - {{ game.grade }}
+      </li>
     </ul>
   </div>
 </template>
 
+<script setup>
+import { ref, onMounted } from 'vue';
+
+const user = ref({
+  username: '',
+  profilePicture: '',
+  games: []
+});
+
+// Load data from JSON file
+onMounted(async () => {
+  try {
+    const response = await fetch('../user_data.json');
+    const data = await response.json();
+    user.value = data.user;
+  } catch (error) {
+    console.error('Error loading data:', error);
+  }
+});
+</script>
 
 <style scoped>
 img {
