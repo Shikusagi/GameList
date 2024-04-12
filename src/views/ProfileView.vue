@@ -1,12 +1,15 @@
 <template>
   <div>
-    <img :src="user.profilePicture" alt="Profile Picture" />
-    <span>{{ user.username }}</span>
-    <ul>
-      <li v-for="game in user.games" :key="game.id">
-        {{ game.title }} - {{ game.grade }}
-      </li>
-    </ul>
+    <div class="band"></div>
+    <div>
+      <img :src="user.profilePicture" alt="Profile Picture" />
+      <span>{{ user.username }}</span>
+      <ul>
+        <li v-for="game in user.games" :key="game.id">
+          {{ game.title }} - Scored: {{ game.grade }} - Status: {{ game.status }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -32,8 +35,51 @@ onMounted(async () => {
 </script>
 
 <style scoped>
+
+
+.band {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(22, 22, 47);
+  height: 300px; 
+}
+
 img {
-  width: 100px;
-  height: 100px;
+  position: absolute;
+  top: 150px; 
+  left: 15%; 
+  width: 150px;
+  height: 150px;
+}
+
+span {
+  position: absolute;
+  top:260px;
+  left: 27%; 
+  font-size: 24px;
+  font-family: Snell Roundhand, cursive;
+  color: white; 
+}
+
+li {
+  background-color: gray;
+  padding: 18px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 16px;
+  font-family: Arial;
+  width: 50%;
+  margin-left: 40%; 
+  margin-right: auto;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 350px;
 }
 </style>
