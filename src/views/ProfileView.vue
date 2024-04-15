@@ -37,7 +37,7 @@ const user = ref({
 // Load data from JSON file
 onMounted(async () => {
   try {
-    user.value = users[0];
+    user.value = undefined;
   } catch (error) {
     console.error('Error loading data:', error);
   }
