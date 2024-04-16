@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "name": "Fortnite Battle Royal",
+    "average_rating": 2.7,
+    "release_date": "2017-09-26",
+    "studio": "Epic Games"
+  },
+  {
+    "id": 2,
+    "name": "Red Dead Redemption 2",
+    "average_rating": 9.5,
+    "release_date": "2018-10-26",
+    "studio": "Epic Games"
+  },
+  {
+    "id": 3,
+    "name": "God of War",
+    "average_rating": 9.4,
+    "release_date": "2018-04-20",
+    "studio": "Epic Games"
+  },
+  {
+    "id": 4,
+    "name": "The Witcher 3: Wild Hunt",
+    "average_rating": 9.8,
+    "release_date": "2015-05-19",
+    "studio": "Epic Games"
+  },
+  {
+    "id": 5,
+    "name": "League of legends",
+    "average_rating": 4.3,
+    "release_date": "2009-10-27",
+    "studio": "Epic Games"
+  },
+  {
+    "id": 6,
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "average_rating": 8.2,
+    "release_date": "2017-03-03",
+    "studio": "Epic Games"
+  },
+  {
+    "id": 7,
+    "name": "Minecraft",
+    "average_rating": 8.5,
+    "release_date": "2011-11-18",
+    "studio": "Epic Games"
+  },
+  {
+    "id": 8,
+    "name": "Grand Theft Auto V",
+    "average_rating": 9.2,
+    "release_date": "2013-09-17",
+    "studio": "Epic Games"
+  },
+  {
+    "id": 9,
+    "name": "Super Mario Odyssey",
+    "average_rating": 8.4,
+    "release_date": "2017-10-27",
+    "studio": "Epic Games"
+  },
+  {
+    "id": 10,
+    "name": "Call of Duty: Modern Warfare",
+    "average_rating": 6.2,
+    "release_date": "2019-10-25",
+    "studio": "Epic Games"
+  },
+  {
+    "id": 11,
+    "name": "Assassin's Creed Odyssey",
+    "average_rating": 8.5,
+    "release_date": "2018-10-05",
+    "studio": "Epic Games"
+  },
+  {
+    "id": 12,
+    "name": "PlayerUnknown's Battlegrounds",
+    "average_rating": 7.0,
+    "release_date": "2017-12-20",
+    "studio": "Epic Games"
+  },
+  {
+    "id": 13,
+    "name": "Apex Legends",
+    "average_rating": 8.5,
+    "release_date": "2019-02-04",
+    "studio": "Epic Games"
+  },
+  {
+    "id": 14,
+    "name": "Tom Clancy's Rainbow Six Siege",
+    "average_rating": 4.5,
+    "release_date": "2015-12-01",
+    "studio": "Epic Games"
+  },
+  {
+    "id": 15,
+    "name": "Dark Souls III",
+    "average_rating": 9.0,
+    "release_date": "2016-04-12",
+    "studio": "Epic Games"
+  },
+  {
+    "id": 16,
+    "name": "Helldivers II",
+    "average_rating": 9.0,
+    "release_date": "2024-02-8",
+    "studio": "Epic Games"
+  },
+  {
+    "id": 17,
+    "name": "Doom Eternal",
+    "average_rating": 10.0,
+    "release_date": "2020-03-20",
+    "studio": "Epic Games" 
+  }
+]
