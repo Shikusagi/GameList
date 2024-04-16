@@ -1,0 +1,67 @@
+<script>
+    export default {
+      data() {
+        return {
+          game: {}
+        }
+      },
+      created() {
+        // Fetch game data from API or local storage based on the game ID
+        // For example, assuming you have the game ID in the route params:
+        const gameId = this.$route.params.id
+        fetch(`/views/game_pages/${gameId}`)
+          .then(response => response.json())
+          .then(data => {
+            this.game = data
+          })
+      }
+    }
+</script>
+
+<template>
+  <div class="game-page">
+    <div class="game-info">
+      <img :src="game.image_url" alt="Game cover">
+      <h2>{{ game.name }}</h2>
+      <p>Release date: {{ game.release_date }}</p>
+      <p>Rating: {{ game.rating }}</p>
+      <p>Studio: {{ game.studio }}</p>
+    </div>
+    <div class="game-description">
+      <p>{{ game.description }}</p>
+    </div>
+  </div>
+</template>
+
+  
+  
+<style scoped>
+  .game-page {
+    display: flex;
+  }
+  
+  .game-info {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .game-info img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .game-description {
+    flex: 2;
+    display: flex;
+    padding: 0 20px;
+  }
+  
+  .game-description-col1,
+  .game-description-col2 {
+    flex: 1;
+    padding: 0 20px;
+  }
+  </style>
+  
