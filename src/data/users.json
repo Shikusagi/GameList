@@ -1,0 +1,29 @@
+[
+  {
+    "username": "Shiku",
+    "password": "password",
+    "profilePicture": "https://i.imgur.com/FfqCvuB.jpeg",
+    "games": [
+      { 
+        "id": 1,
+        "title": "Fortnite",
+        "grade": 4,
+        "status": "Playing",
+        "pic":"https://i.imgur.com/7IAqW1r.png"
+      },
+      {
+        "id": 2,
+        "title": "Dofus",
+        "grade": 3,
+        "status": "Dropped",
+        "pic":"https://i.imgur.com/YOyMCE7.png"
+      },
+      {
+        "id": 3,
+        "title": "Genshin Impact",
+        "grade": 5,
+        "status": "Playing",
+        "pic":"https://i.imgur.com/UPxuagR.png"
+      }
+    ]
+}]
