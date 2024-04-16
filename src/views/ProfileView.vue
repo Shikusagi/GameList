@@ -1,23 +1,31 @@
 <template>
   <div v-if="user">
-    <div>
       <div>
         <div class="user-info">
           <img class="user-pic" :src="user.profilePicture" alt="Profile Picture" />
           <span class="user-name">{{ user.username }}</span>
         </div>
         
-        <ul>
-          <li v-for="game in user.games" :key="game.id">
+        <ul class="activity-list">  
+          <li v-for="game in user.games" :key="game.id" class="game-list">
             <div class="game-item">
               <img :src="game.pic" alt="Game Picture" class="game-picture" />
               <span>{{ game.status }} {{ game.title }} - Scored: {{ game.grade }}</span>
             </div>
           </li>
         </ul>
+
+        <ul class="fav-list">  
+          <span>Favorites: </span>
+          <div class="game-fav">
+          <li v-for="game in user.games" :key="game.id" class="game-list-fav">
+              <img v-if="game.fav" :src="game.pic" alt="Game Picture" class="game-fav-picture" />
+          </li>
+        </div>
+        </ul>
+
       </div>
-    </div>
-  </div>
+  </div>  
   <div v-else>
     <p>You are not logged in...</p>
    
@@ -37,11 +45,13 @@ const user = ref({
 // Load data from JSON file
 onMounted(async () => {
   try {
-    user.value = undefined;
+    user.value = users[0];
   } catch (error) {
     console.error('Error loading data:', error);
   }
 });
+
+
 </script>
 
 <style scoped>
@@ -61,7 +71,7 @@ onMounted(async () => {
 .user-pic {
   width: 150px;
   height: 150px;
-  margin-left: 20%;
+  margin-left: 15%;
   margin-top: 150px;
 }
 
@@ -73,7 +83,29 @@ onMounted(async () => {
   margin-left: 15px;
 }
 
-li {
+.fav-list{
+  width: 28%;
+  background-color: rgb(176, 191, 235);
+  list-style-type: none;
+  margin-top: -24%;
+  margin-left: 10%;
+}
+
+.game-fav {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px; 
+
+}
+
+.game-fav-picture {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px; 
+}
+
+
+.game-list {
   background-color: rgb(176, 191, 235);
   padding: 18px;
   margin-bottom: 20px;
@@ -86,7 +118,7 @@ li {
   margin-right: auto;
 }
 
-ul {
+.activity-list {
   display: flex;
   flex-direction: column;
   align-items: center;
