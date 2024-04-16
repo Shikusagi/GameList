@@ -59,12 +59,11 @@ onMounted(async () => {
 .user-info{
   display: flex;
   flex-direction: row;
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   background-color: rgb(22, 22, 47);
-  height: 300px; 
+  height: 280px; 
   gap: 10px;
 }
 
@@ -72,14 +71,14 @@ onMounted(async () => {
   width: 150px;
   height: 150px;
   margin-left: 15%;
-  margin-top: 150px;
+  margin-top: 130px;
 }
 
 .user-name {
   font-size: 24px;
   font-family: Snell Roundhand, cursive;
   color: white;
-  margin-top: 260px;
+  margin-top: 240px;
   margin-left: 15px;
 }
 
@@ -124,7 +123,7 @@ onMounted(async () => {
   align-items: center;
   list-style-type: none;
   padding: 0;
-  margin-top: 350px;
+  margin-top: 8%;
 }
 
 .game-picture {

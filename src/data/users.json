@@ -9,21 +9,24 @@
         "title": "Fortnite",
         "grade": 4,
         "status": "Playing",
-        "pic":"https://i.imgur.com/7IAqW1r.png"
+        "pic":"https://i.imgur.com/7IAqW1r.png",
+        "fav": true
       },
       {
         "id": 2,
         "title": "Dofus",
         "grade": 3,
         "status": "Dropped",
-        "pic":"https://i.imgur.com/YOyMCE7.png"
+        "pic":"https://i.imgur.com/YOyMCE7.png",
+        "fav": false
       },
       {
         "id": 3,
         "title": "Genshin Impact",
         "grade": 5,
         "status": "Playing",
-        "pic":"https://i.imgur.com/UPxuagR.png"
+        "pic":"https://i.imgur.com/UPxuagR.png",
+        "fav": true
       }
     ]
 }]
